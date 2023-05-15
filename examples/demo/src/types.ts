@@ -2,11 +2,17 @@ import { RaRecord } from 'react-admin';
 
 export type ThemeName = 'light' | 'dark';
 
+/**
+ * @Resource
+ */
 export interface Category extends RaRecord<number> {
     id: number;
     name: string;
 }
 
+/**
+ * @Resource
+ */
 export interface Product extends RaRecord<number> {
     category_id: number;
     description: string;
